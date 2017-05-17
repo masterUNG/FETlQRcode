@@ -15,6 +15,9 @@ import org.json.JSONObject;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+
+    //นี่คือการเปลี่ยนแปลง จาก Project
+
     //Explicit
     private EditText userEditText, passwordEditText;
     private TextView textView;
