@@ -8,6 +8,11 @@ public class MyConstant {
 
     //Explicit
     private String urlPostUser = "http://androidthai.in.th/fetl/addUserMaster.php";
+    private String urlGetUser = "http://androidthai.in.th/fetl/getUserMaster.php";
+
+    public String getUrlGetUser() {
+        return urlGetUser;
+    }
 
     public String getUrlPostUser() {
         return urlPostUser;
