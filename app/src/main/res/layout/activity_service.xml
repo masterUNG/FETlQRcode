@@ -13,6 +13,7 @@
         android:padding="@dimen/padding">
 
         <TextView
+            android:id="@+id/txtNameLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Name"
@@ -31,6 +32,7 @@
                 android:orientation="vertical">
 
                 <ImageView
+                    android:id="@+id/imvBarCode"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
@@ -45,20 +47,22 @@
             </LinearLayout>
 
             <LinearLayout
+                android:layout_marginLeft="3dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <ImageView
+                    android:id="@+id/imvQrCode"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:src="@mipmap/ic_bar" />
+                    android:src="@mipmap/ic_qr" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Bar Code"
+                    android:text="QR Code"
                     android:textColor="@color/white" />
 
             </LinearLayout>
@@ -66,6 +70,11 @@
         </LinearLayout>
 
     </RelativeLayout>
+
+    <ListView
+        android:id="@+id/livProduct"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
 
 
 </LinearLayout>
