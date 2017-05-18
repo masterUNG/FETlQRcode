@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="appewtc.masterung.fetlqrcode.DetailActivity">
+    tools:context=".DetailActivity">
 
     <RelativeLayout
         android:background="@color/colorPrimary"
@@ -14,11 +14,13 @@
         android:layout_height="wrap_content">
 
         <ImageView
+            android:id="@+id/imvBack"
             android:src="@mipmap/ic_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <TextView
+            android:id="@+id/txtTitle"
             android:textColor="@color/white"
             android:layout_centerInParent="true"
             android:text="Name"
@@ -38,6 +40,7 @@
         android:layout_height="match_parent">
 
         <ImageView
+            android:id="@+id/imvImage"
             android:scaleType="fitCenter"
             android:layout_weight="1"
             android:layout_width="match_parent"
@@ -54,6 +57,7 @@
                 android:layout_height="wrap_content">
 
                 <TextView
+                    android:id="@+id/txtDetail"
                     android:text="Detail"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="@dimen/h2"
