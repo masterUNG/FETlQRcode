@@ -8,6 +8,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
+
 /**
  * Created by masterUNG on 5/18/2017 AD.
  */
@@ -18,6 +20,7 @@ public class MyAdapter extends BaseAdapter{
     private String[] iconStrings, titleStrings, detailStrings;
     private ImageView imageView;
     private TextView titleTextView, detailTextView;
+    private String detailShort;
 
     public MyAdapter(Context context,
                      String[] iconStrings,
@@ -54,6 +57,19 @@ public class MyAdapter extends BaseAdapter{
         imageView = (ImageView) view1.findViewById(R.id.imvIcon);
         titleTextView = (TextView) view1.findViewById(R.id.txtTitle);
         detailTextView = (TextView) view1.findViewById(R.id.txtDetail);
+
+        //Show Text
+        titleTextView.setText(titleStrings[i]);
+
+        if (detailStrings[i].length() > 30) {
+            detailShort = detailStrings[i].substring(0, 30) + " ...";
+        } else {
+            detailShort = detailStrings[i];
+        }
+        detailTextView.setText(detailShort);
+
+        //Show Image
+        Picasso.with(context).load(iconStrings[i]).into(imageView);
 
         return view1;
     }
