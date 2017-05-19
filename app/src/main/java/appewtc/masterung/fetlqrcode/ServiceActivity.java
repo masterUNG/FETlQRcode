@@ -39,7 +39,7 @@ public class ServiceActivity extends AppCompatActivity implements View.OnClickLi
         controller();
 
 
-    }   // Main Method
+    }   // Main Method นี่คือ เมธอดหลัก
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -74,6 +74,8 @@ public class ServiceActivity extends AppCompatActivity implements View.OnClickLi
         }
 
     }
+
+
 
     private void controller() {
         barImageView.setOnClickListener(this);
